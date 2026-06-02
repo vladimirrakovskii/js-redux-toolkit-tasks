@@ -5,7 +5,9 @@ import Comment from './Comment.jsx';
 const Post = ({ post }) => {
   const author = useSelector((state) => {
     // BEGIN (write your solution here)
-
+    const currentPost = state.postsReducer.entities[post.id];
+    const currentAuthor = currentPost.author;
+    return state.usersReducer.entities[currentAuthor];
     // END
   });
 
