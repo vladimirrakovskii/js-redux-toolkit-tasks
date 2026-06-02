@@ -7,7 +7,7 @@ import routes from '../routes.js';
 import { actions as usersActions } from '../slices/usersSlice.js';
 import { actions as postsActions } from '../slices/postsSlice.js';
 // BEGIN (write your solution here)
-
+import { actions as commentsActions } from '../slices/commentsSlice.js';
 // END
 
 const App = () => {
